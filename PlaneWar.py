@@ -278,6 +278,7 @@ def main():
 
         screen.blit(background, (0, 0))
 
+        #控制飞机移动
         if life_num and not paused:
             # 检测用户的键盘操作
             key_pressed = pygame.key.get_pressed()
