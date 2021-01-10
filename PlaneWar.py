@@ -51,6 +51,7 @@ me_down_sound = pygame.mixer.Sound("sound/me_down.wav")
 me_down_sound.set_volume(0.2)
 
 
+
 def add_small_enemies(group1, group2, num):
     for i in range(num):
         e1 = enemy.SmallEnemy(bg_size)
@@ -122,7 +123,7 @@ def main():
 
     # 统计得分
     score = 0
-    score_font = pygame.font.Font("font/font.ttf", 36)
+    score_font = pygame.font.Font("font/font.ttf", 34)
 
     # 标志是否暂停游戏
     paused = False
@@ -278,6 +279,7 @@ def main():
 
         screen.blit(background, (0, 0))
 
+        #控制飞机移动
         if life_num and not paused:
             # 检测用户的键盘操作
             key_pressed = pygame.key.get_pressed()
