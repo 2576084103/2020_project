@@ -26,6 +26,8 @@ RED = (255, 0, 0)
 
 
 
+
+
 def add_small_enemies(group1, group2, num):
     for i in range(num):
         e1 = enemy.SmallEnemy(bg_size)
